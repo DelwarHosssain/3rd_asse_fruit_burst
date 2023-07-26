@@ -22,6 +22,8 @@
                         clifford: '#da373d',
                         'bike-primary': '#E76F51',
                         'panki': '#F85559',
+                        'ratingc': '#f85559',
+                        'paragrapi': 'rgba(18, 18, 18, 0.60)',
 
                     }
                 }
@@ -175,12 +177,13 @@
         </section>
     </header>
     <main>
-        <section class="flex justify-between md:container md:mx-auto mt-12">
-            <div class="flex-1">
-                <h1>Deal of the day</h1>
-                <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        <section class="md:container md:mx-auto ">
+           <div class="flex justify-between ">
+            <div class="">
+                <h1 class="text-5xl font-extrabold">Deal of the day</h1>
+                <p class="text-base font-medium text-current">Contrary to popular belief, is not simply random text. It has roots in a piece of <br> classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
-            <div class="flex-1">
+            <div class="shadow-sm">
                 <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
                     <div class="flex flex-col">
                       <span class="countdown font-mono text-5xl">
@@ -206,8 +209,92 @@
                       </span>
                       sec
                     </div>
-                  </div>
+                </div>
             </div>
+        </section>
+        <!-- card -->
+        <section class="md:container md:mx-auto mt-12">
+            <div class="mt-20 flex justify-between gap-x-7 ">
+                <div class="card w-96 bg-base-100 shadow-xl space-x-4 hover:border-orange-300 hover:border-2">
+                    <figure><img class="pt-7" src="images/fruit6.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center pt-5">
+                    <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
+                    <hr>
+                    <p class="text-base font-medium text-paragrapi">Apples</p>
+                    <div class="rating justify-center ">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" />
+                    </div>
+                    <span class="text-ratingc font-bold text-lg" >Details</span>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl space-x-4 hover:border-orange-300 hover:border-2">
+                    <figure><img class="pt-7" src="images/fruit6.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center pt-5">
+                    <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
+                    <hr>
+                    <p class="text-base font-medium text-paragrapi">Apples</p>
+                    <div class="rating justify-center ">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" />
+                    </div>
+                    <span class="text-ratingc font-bold text-lg" >Details</span>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl space-x-4 hover:border-orange-300 hover:border-2">
+                    <figure><img class="pt-7" src="images/fruit6.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center pt-5">
+                    <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
+                    <hr>
+                    <p class="text-base font-medium text-paragrapi">Apples</p>
+                    <div class="rating justify-center ">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" />
+                    </div>
+                    <span class="text-ratingc font-bold text-lg" >Details</span>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl space-x-4  hover:border-orange-300 hover:border-2">
+                    <figure><img class="pt-7" src="images/fruit6.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center pt-5">
+                    <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
+                    <hr>
+                    <p class="text-base font-medium text-paragrapi">Apples</p>
+                    <div class="rating justify-center ">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-ratingc" />
+                    </div>
+                    <div>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="text-ratingc font-bold text-lg" onclick="my_modal_2.showModal()">Details</button>
+                        <dialog id="my_modal_2" class="modal">
+                          <form method="dialog" class="modal-box">
+                            <img class="w-2/4 ml-28" src="images/fruit9.png" alt="">
+                            <h3 class="font-bold text-4xl font-extrabold">Banana</h3>
+                            <p class="px-16 text-base font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                          </form>
+                          <form method="dialog" class="modal-backdrop">
+                            <button>close</button>
+                          </form>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quos provident nesciunt, cumque sapiente reprehenderit libero quam ipsam minima optio porro ducimus tenetur nam, quibusdam, nobis temporibus quo labore neque inventore ipsa enim voluptas. Quidem voluptatibus inventore aliquam sed, et at veniam ut iure repellat, maiores a aut assumenda, velit placeat iusto. Dignissimos ab blanditiis perspiciatis cumque quaerat dolores provident, praesentium enim id, animi nulla ut quas earum minima. Fugit exercitationem, voluptate eligendi officiis quia ratione perspiciatis tempora, quaerat cupiditate quo alias nisi. At quaerat iste, perspiciatis cumque excepturi aut unde. Sapiente magnam repudiandae rerum sequi error quia obcaecati sint iste nemo quos fugiat hic quisquam culpa iure doloremque, expedita inventore ea quo ducimus, modi ipsam nostrum deleniti facilis nam. Eveniet nisi quo culpa id sit commodi obcaecati nobis minus, quisquam eligendi distinctio consequatur, accusamus repudiandae blanditiis, itaque quidem. Mollitia pariatur laudantium eum, optio excepturi explicabo sint recusandae, cumque, laborum nemo consequatur? Quasi, facilis quia? Cum cupiditate officia a nobis saepe, nam voluptate fugit, animi velit vitae, quae sit. Nisi nemo veniam voluptas quidem at soluta eveniet dolor necessitatibus explicabo, amet sunt reprehenderit facilis non nostrum. Veritatis, nisi. Consequuntur quis odit dolorem nulla eligendi atque ullam deserunt doloremque, dignissimos sunt!
         </section>
     </main>
 </body>
